@@ -12,6 +12,12 @@
 		1CBD7BE21C87C51500890B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CBD7BE01C87C51500890B90 /* Main.storyboard */; };
 		1CBD7BE41C87C51500890B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CBD7BE31C87C51500890B90 /* Assets.xcassets */; };
 		1CBD7BE71C87C51500890B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CBD7BE51C87C51500890B90 /* LaunchScreen.storyboard */; };
+		1CBD7BEF1C87D20700890B90 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CBD7BEE1C87D20700890B90 /* Pacifico.ttf */; };
+		1CBD7BF71C8810DA00890B90 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD7BF61C8810DA00890B90 /* DataService.swift */; };
+		1CEEEC1D1C88B899006242B0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEEEC1C1C88B899006242B0 /* FeedVC.swift */; };
+		1CEEEC1F1C88C03A006242B0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEEEC1E1C88C03A006242B0 /* PostCell.swift */; };
+		1CEEEC211C88EA16006242B0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEEEC201C88EA16006242B0 /* Post.swift */; };
+		5D4AB9940FA02E516B1BC48D /* Pods_Catch_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F72C6597400B7121C2CAB6 /* Pods_Catch_Up.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		1CBD7BE31C87C51500890B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CBD7BE61C87C51500890B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CBD7BE81C87C51500890B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CBD7BEE1C87D20700890B90 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		1CBD7BF61C8810DA00890B90 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1CEEEC1C1C88B899006242B0 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		1CEEEC1E1C88C03A006242B0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		1CEEEC201C88EA16006242B0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		30B9BD44F5C5B65293101975 /* Pods-Catch Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catch Up.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Catch Up/Pods-Catch Up.debug.xcconfig"; sourceTree = "<group>"; };
+		73F72C6597400B7121C2CAB6 /* Pods_Catch_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catch_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FAE159B963B034FD9D22B9 /* Pods-Catch Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catch Up.release.xcconfig"; path = "Pods/Target Support Files/Pods-Catch Up/Pods-Catch Up.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4AB9940FA02E516B1BC48D /* Pods_Catch_Up.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19B9D2B5B14B67B0ED3D9CA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F72C6597400B7121C2CAB6 /* Pods_Catch_Up.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1CBD7BD01C87C51500890B90 = {
 			isa = PBXGroup;
 			children = (
 				1CBD7BDB1C87C51500890B90 /* Catch Up */,
 				1CBD7BDA1C87C51500890B90 /* Products */,
+				7DCEBF491750BBB4922E4F04 /* Pods */,
+				19B9D2B5B14B67B0ED3D9CA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,60 @@
 		1CBD7BDB1C87C51500890B90 /* Catch Up */ = {
 			isa = PBXGroup;
 			children = (
-				1CBD7BDC1C87C51500890B90 /* AppDelegate.swift */,
-				1CBD7BDE1C87C51500890B90 /* ViewController.swift */,
+				1CBD7BF51C8810B600890B90 /* Services */,
+				1CBD7BF41C88090100890B90 /* Controller */,
+				1CBD7BF31C8808FB00890B90 /* View */,
+				1CBD7BF21C8808F500890B90 /* Model */,
 				1CBD7BE01C87C51500890B90 /* Main.storyboard */,
 				1CBD7BE31C87C51500890B90 /* Assets.xcassets */,
+				1CBD7BDC1C87C51500890B90 /* AppDelegate.swift */,
 				1CBD7BE51C87C51500890B90 /* LaunchScreen.storyboard */,
+				1CBD7BEE1C87D20700890B90 /* Pacifico.ttf */,
 				1CBD7BE81C87C51500890B90 /* Info.plist */,
 			);
 			path = "Catch Up";
+			sourceTree = "<group>";
+		};
+		1CBD7BF21C8808F500890B90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CEEEC201C88EA16006242B0 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1CBD7BF31C8808FB00890B90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CEEEC1E1C88C03A006242B0 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1CBD7BF41C88090100890B90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CBD7BDE1C87C51500890B90 /* ViewController.swift */,
+				1CEEEC1C1C88B899006242B0 /* FeedVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1CBD7BF51C8810B600890B90 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1CBD7BF61C8810DA00890B90 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		7DCEBF491750BBB4922E4F04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30B9BD44F5C5B65293101975 /* Pods-Catch Up.debug.xcconfig */,
+				D6FAE159B963B034FD9D22B9 /* Pods-Catch Up.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CBD7BEB1C87C51500890B90 /* Build configuration list for PBXNativeTarget "Catch Up" */;
 			buildPhases = (
+				CA98F86B6A920C69F402E001 /* Check Pods Manifest.lock */,
 				1CBD7BD51C87C51500890B90 /* Sources */,
 				1CBD7BD61C87C51500890B90 /* Frameworks */,
 				1CBD7BD71C87C51500890B90 /* Resources */,
+				83CB3C660FC150952E8EC1E3 /* Embed Pods Frameworks */,
+				3D4698D580A3A2646F779416 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,19 +198,72 @@
 			files = (
 				1CBD7BE71C87C51500890B90 /* LaunchScreen.storyboard in Resources */,
 				1CBD7BE41C87C51500890B90 /* Assets.xcassets in Resources */,
+				1CBD7BEF1C87D20700890B90 /* Pacifico.ttf in Resources */,
 				1CBD7BE21C87C51500890B90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D4698D580A3A2646F779416 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Catch Up/Pods-Catch Up-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83CB3C660FC150952E8EC1E3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Catch Up/Pods-Catch Up-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA98F86B6A920C69F402E001 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CBD7BD51C87C51500890B90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEEEC1D1C88B899006242B0 /* FeedVC.swift in Sources */,
+				1CBD7BF71C8810DA00890B90 /* DataService.swift in Sources */,
 				1CBD7BDF1C87C51500890B90 /* ViewController.swift in Sources */,
+				1CEEEC211C88EA16006242B0 /* Post.swift in Sources */,
 				1CBD7BDD1C87C51500890B90 /* AppDelegate.swift in Sources */,
+				1CEEEC1F1C88C03A006242B0 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +374,7 @@
 		};
 		1CBD7BEC1C87C51500890B90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B9BD44F5C5B65293101975 /* Pods-Catch Up.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Catch Up/Info.plist";
@@ -258,6 +386,7 @@
 		};
 		1CBD7BED1C87C51500890B90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FAE159B963B034FD9D22B9 /* Pods-Catch Up.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Catch Up/Info.plist";
@@ -286,6 +415,7 @@
 				1CBD7BED1C87C51500890B90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

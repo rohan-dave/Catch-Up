@@ -1,0 +1,10 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "d5c30e8eea9f12fe90005ee27e36ce32"
+build_time: [510357271, 215710000]
+inputs:
+  "/Users/Rohan/Development/Xcode/Catch Up/Catch Up/ViewController.swift": [510355984, 0]
+  "/Users/Rohan/Development/Xcode/Catch Up/Catch Up/AppDelegate.swift": [510282261, 0]
+  "/Users/Rohan/Development/Xcode/Catch Up/Catch Up/PostCell.swift": [510349574, 0]
+  "/Users/Rohan/Development/Xcode/Catch Up/Catch Up/DataService.swift": [510355984, 0]
+  "/Users/Rohan/Development/Xcode/Catch Up/Catch Up/Post.swift": !dirty [9223372036854775807, 0]
+  "/Users/Rohan/Development/Xcode/Catch Up/Catch Up/FeedVC.swift": !private [510357270, 0]

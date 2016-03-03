@@ -1,0 +1,181 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "URL_BASE"
+- "DataServcie"
+provides-nominal:
+- "C8Catch_Up11DataServcie"
+provides-member:
+- ["C8Catch_Up11DataServcie", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Dictionary"
+- "String"
+- "URL_BASE"
+- "Firebase"
+- "DataServcie"
+- "StringLiteralType"
+depends-member:
+- ["PSs9AnyObject", "DataServcie"]
+- ["PSs9AnyObject", "Firebase"]
+- !private ["PSs9AnyObject", "REF_USERS"]
+- ["PSs9AnyObject", "URL_BASE"]
+- !private ["PSs9AnyObject", "_REF_BASE"]
+- !private ["PSs9AnyObject", "_REF_POSTS"]
+- !private ["PSs9AnyObject", "_REF_USERS"]
+- !private ["PSs9AnyObject", "childByAppendingPath"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "setValue"]
+- ["PSs9AnyObject", ""]
+- ["Sb", "deinit"]
+- !private ["PSs11CVarArgType", "childByAppendingPath"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "setValue"]
+- ["VSs9Character", "deinit"]
+- ["PSs10Comparable", "init"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "childByAppendingPath"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
+- ["C8Catch_Up11DataServcie", "DataServcie"]
+- ["C8Catch_Up11DataServcie", "Dictionary"]
+- ["C8Catch_Up11DataServcie", "Firebase"]
+- ["C8Catch_Up11DataServcie", "REF_BASE"]
+- ["C8Catch_Up11DataServcie", "REF_POSTS"]
+- ["C8Catch_Up11DataServcie", "REF_USERS"]
+- ["C8Catch_Up11DataServcie", "String"]
+- ["C8Catch_Up11DataServcie", "URL_BASE"]
+- !private ["C8Catch_Up11DataServcie", "_REF_BASE"]
+- !private ["C8Catch_Up11DataServcie", "_REF_POSTS"]
+- !private ["C8Catch_Up11DataServcie", "_REF_USERS"]
+- ["C8Catch_Up11DataServcie", "createUser"]
+- ["C8Catch_Up11DataServcie", "deinit"]
+- ["C8Catch_Up11DataServcie", "ds"]
+- ["C8Catch_Up11DataServcie", "init"]
+- !private ["VSs10Dictionary", "deinit"]
+- ["Sd", "deinit"]
+- !private ["PSs9Equatable", "childByAppendingPath"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "setValue"]
+- ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo6FQuery", "childByAppendingPath"]
+- ["CSo6FQuery", "init"]
+- !private ["CSo6FQuery", "setValue"]
+- !private ["CSo8Firebase", "childByAppendingPath"]
+- ["CSo8Firebase", "init"]
+- !private ["CSo8Firebase", "setValue"]
+- ["Sf", "deinit"]
+- !private ["PSs8Hashable", "childByAppendingPath"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "setValue"]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- ["VSs5Int16", "deinit"]
+- ["VSs5Int32", "deinit"]
+- ["VSs5Int64", "deinit"]
+- ["VSs4Int8", "deinit"]
+- ["PSs14MirrorPathType", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "childByAppendingPath"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["PSs16OutputStreamType", "init"]
+- ["PSs10Streamable", "init"]
+- ["SS", "init"]
+- ["PSs30StringInterpolationConvertible", "init"]
+- ["PSs24StringLiteralConvertible", "init"]
+- ["Su", "deinit"]
+- ["VSs6UInt16", "deinit"]
+- ["VSs6UInt32", "deinit"]
+- ["VSs6UInt64", "deinit"]
+- ["VSs5UInt8", "deinit"]
+- ["Sc", "deinit"]
+- ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- ["PSs16_CocoaStringType", "init"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sb"
+- "PSs11CVarArgType"
+- "VSs9Character"
+- "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "C8Catch_Up11DataServcie"
+- !private "VSs10Dictionary"
+- "Sd"
+- "PSs9Equatable"
+- "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "CSo6FQuery"
+- "CSo8Firebase"
+- "Sf"
+- "PSs8Hashable"
+- "SQ"
+- "Si"
+- "VSs5Int16"
+- "VSs5Int32"
+- "VSs5Int64"
+- "VSs4Int8"
+- "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "PSs16OutputStreamType"
+- "PSs10Streamable"
+- "SS"
+- "PSs30StringInterpolationConvertible"
+- "PSs24StringLiteralConvertible"
+- "Su"
+- "VSs6UInt16"
+- "VSs6UInt32"
+- "VSs6UInt64"
+- "VSs5UInt8"
+- "Sc"
+- "PSs31UnicodeScalarLiteralConvertible"
+- "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- "PSs32_BuiltinStringLiteralConvertible"
+- "PSs37_BuiltinUTF16StringLiteralConvertible"
+- "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- "PSs16_CocoaStringType"
+- "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FMutableData.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FQuery.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FEventType.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FConfig.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthType.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthData.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "9eb6c8befeb47495e5505d2d5f13a260"
