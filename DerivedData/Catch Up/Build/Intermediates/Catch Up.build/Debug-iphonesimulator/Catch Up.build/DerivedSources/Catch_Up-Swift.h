@@ -108,6 +108,7 @@ SWIFT_CLASS("_TtC8Catch_Up11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCache;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
@@ -117,6 +118,8 @@ SWIFT_CLASS("_TtC8Catch_Up11AppDelegate")
 SWIFT_CLASS("_TtC8Catch_Up6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
++ (NSCache * __nonnull)imageCache;
++ (void)setImageCache:(NSCache * __nonnull)value;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -126,14 +129,15 @@ SWIFT_CLASS("_TtC8Catch_Up6FeedVC")
 @end
 
 @class UIImageView;
+@class UITextView;
 
 SWIFT_CLASS("_TtC8Catch_Up8PostCell")
 @interface PostCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified profileImage;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified photoPost;
+@property (nonatomic, weak) IBOutlet UITextView * __null_unspecified postText;
 - (void)awakeFromNib;
 - (void)drawRect:(CGRect)rect;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

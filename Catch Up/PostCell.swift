@@ -7,12 +7,16 @@
 //
 
 import UIKit
-import MapKit
+import Alamofire
 
 class PostCell: UITableViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var photoPost: UIImageView!
+    @IBOutlet weak var postText: UITextView!
+    
+    var post: Post!
+    var request: Request?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,11 +29,37 @@ class PostCell: UITableViewCell {
         
         photoPost.clipsToBounds = true
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configureCell(post: Post, img:UIImage?) {
+        
+        self.post = post
+        self.postText.text = post.postDescription
+        
+        if post.imageUrl != nil
+        {
+            if img != nil
+            {
+                self.photoPost.image = img
+            }
+            else
+            {
+                request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
+                    
+                    if ( err == nil )
+                    {
+                        let img = UIImage(data: data!)!
+                        self.photoPost.image = img
+                        FeedVC.imageCache.setObject(img, forKey: self.post.imageUrl!)
+                    }
+                })
+            }
+        }
+        else
+        {
+            self.photoPost.hidden = true
+        }
+        
+        
     }
 
 }

@@ -1,0 +1,349 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NetworkReachabilityManager"
+- "=="
+provides-nominal:
+- "C9Alamofire26NetworkReachabilityManager"
+- "OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus"
+- "OC9Alamofire26NetworkReachabilityManager14ConnectionType"
+provides-member:
+- ["C9Alamofire26NetworkReachabilityManager", ""]
+- ["OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus", ""]
+- ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "SCNetworkReachabilitySetCallback"
+- !private "!="
+- !private "BooleanLiteralType"
+- !private "SCNetworkReachabilitySetDispatchQueue"
+- !private "COpaquePointer"
+- "dispatch_get_main_queue"
+- !private "FloatLiteralType"
+- !private "sizeofValue"
+- !private "SCNetworkReachabilityCreateWithName"
+- !private "dispatch_async"
+- "Bool"
+- !private "Unmanaged"
+- !private "??"
+- !private "withUnsafePointer"
+- "String"
+- !private "SCNetworkReachabilityContext"
+- !private "UnsafeMutablePointer"
+- "SCNetworkReachability"
+- !private "SCNetworkReachabilityGetFlags"
+- "NetworkReachabilityManager"
+- "SCNetworkReachabilityFlags"
+- !private "||"
+- !private "SCNetworkReachabilityCreateWithAddress"
+- !private "UInt8"
+- "Void"
+- "dispatch_queue_t"
+- !private "sockaddr_in6"
+- !private "IntegerLiteralType"
+- "Equatable"
+- !private "UnsafePointer"
+- "=="
+- !private "sa_family_t"
+- !private "&&"
+- !private "AF_INET6"
+- !private "!"
+depends-member:
+- !private ["PSs9AnyObject", "AF_INET6"]
+- !private ["PSs9AnyObject", "COpaquePointer"]
+- ["PSs9AnyObject", "NetworkReachabilityStatus"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilityContext"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilityCreateWithAddress"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilityCreateWithName"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilityFlags"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilityGetFlags"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilitySetCallback"]
+- !private ["PSs9AnyObject", "SCNetworkReachabilitySetDispatchQueue"]
+- !private ["PSs9AnyObject", "UInt8"]
+- !private ["PSs9AnyObject", "Unmanaged"]
+- !private ["PSs9AnyObject", "UnsafeMutablePointer"]
+- !private ["PSs9AnyObject", "UnsafePointer"]
+- !private ["PSs9AnyObject", "dispatch_async"]
+- ["PSs9AnyObject", "dispatch_get_main_queue"]
+- !private ["PSs9AnyObject", "flags"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isReachableOnEthernetOrWiFi"]
+- !private ["PSs9AnyObject", "isReachableOnWWAN"]
+- !private ["PSs9AnyObject", "listener"]
+- !private ["PSs9AnyObject", "listenerQueue"]
+- !private ["PSs9AnyObject", "networkReachabilityStatus"]
+- !private ["PSs9AnyObject", "networkReachabilityStatusForFlags"]
+- !private ["PSs9AnyObject", "notifyListener"]
+- !private ["PSs9AnyObject", "previousFlags"]
+- !private ["PSs9AnyObject", "reachability"]
+- !private ["PSs9AnyObject", "sa_family_t"]
+- !private ["PSs9AnyObject", "sizeofValue"]
+- !private ["PSs9AnyObject", "sockaddr_in6"]
+- !private ["PSs9AnyObject", "stopListening"]
+- !private ["PSs9AnyObject", "withUnsafePointer"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "ConnectionOnDemand"]
+- !private ["PSs23ArrayLiteralConvertible", "ConnectionOnTraffic"]
+- !private ["PSs23ArrayLiteralConvertible", "ConnectionRequired"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "InterventionRequired"]
+- !private ["PSs23ArrayLiteralConvertible", "IsWWAN"]
+- !private ["PSs23ArrayLiteralConvertible", "RawValue"]
+- !private ["PSs23ArrayLiteralConvertible", "Reachable"]
+- !private ["PSs23ArrayLiteralConvertible", "contains"]
+- !private ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs22BidirectionalIndexType", "init"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["VSs14COpaquePointer", "init"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs10Comparable", "init"]
+- ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", "EthernetOrWiFi"]
+- ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", "WWAN"]
+- ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", "deinit"]
+- ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", "hashValue"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs9Equatable", "ConnectionOnDemand"]
+- !private ["PSs9Equatable", "ConnectionOnTraffic"]
+- !private ["PSs9Equatable", "ConnectionRequired"]
+- !private ["PSs9Equatable", "Element"]
+- !private ["PSs9Equatable", "EthernetOrWiFi"]
+- !private ["PSs9Equatable", "InterventionRequired"]
+- !private ["PSs9Equatable", "IsWWAN"]
+- ["PSs9Equatable", "NotReachable"]
+- !private ["PSs9Equatable", "RawValue"]
+- ["PSs9Equatable", "Reachable"]
+- ["PSs9Equatable", "Unknown"]
+- !private ["PSs9Equatable", "WWAN"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "contains"]
+- ["PSs9Equatable", "hashValue"]
+- !private ["PSs9Equatable", "init"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- !private ["PSs16ForwardIndexType", "init"]
+- !private ["PSs8Hashable", "EthernetOrWiFi"]
+- !private ["PSs8Hashable", "WWAN"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "hashValue"]
+- !private ["PSs8Hashable", "init"]
+- ["PSs8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "init"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["PSs11IntegerType", "hashValue"]
+- !private ["PSs11IntegerType", "init"]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "AF_INET6"]
+- ["C9Alamofire26NetworkReachabilityManager", "Bool"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "COpaquePointer"]
+- ["C9Alamofire26NetworkReachabilityManager", "ConnectionType"]
+- ["C9Alamofire26NetworkReachabilityManager", "Listener"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "NetworkReachabilityManager"]
+- ["C9Alamofire26NetworkReachabilityManager", "NetworkReachabilityStatus"]
+- ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachability"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilityContext"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilityCreateWithAddress"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilityCreateWithName"]
+- ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilityFlags"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilityGetFlags"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilitySetCallback"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "SCNetworkReachabilitySetDispatchQueue"]
+- ["C9Alamofire26NetworkReachabilityManager", "String"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "UInt8"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "Unmanaged"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "UnsafeMutablePointer"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "UnsafePointer"]
+- ["C9Alamofire26NetworkReachabilityManager", "Void"]
+- ["C9Alamofire26NetworkReachabilityManager", "deinit"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "dispatch_async"]
+- ["C9Alamofire26NetworkReachabilityManager", "dispatch_get_main_queue"]
+- ["C9Alamofire26NetworkReachabilityManager", "dispatch_queue_t"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "flags"]
+- ["C9Alamofire26NetworkReachabilityManager", "init"]
+- ["C9Alamofire26NetworkReachabilityManager", "isReachable"]
+- ["C9Alamofire26NetworkReachabilityManager", "isReachableOnEthernetOrWiFi"]
+- ["C9Alamofire26NetworkReachabilityManager", "isReachableOnWWAN"]
+- ["C9Alamofire26NetworkReachabilityManager", "listener"]
+- ["C9Alamofire26NetworkReachabilityManager", "listenerQueue"]
+- ["C9Alamofire26NetworkReachabilityManager", "networkReachabilityStatus"]
+- ["C9Alamofire26NetworkReachabilityManager", "networkReachabilityStatusForFlags"]
+- ["C9Alamofire26NetworkReachabilityManager", "notifyListener"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "previousFlags"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "reachability"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "sa_family_t"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "sizeofValue"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "sockaddr_in6"]
+- ["C9Alamofire26NetworkReachabilityManager", "startListening"]
+- ["C9Alamofire26NetworkReachabilityManager", "stopListening"]
+- !private ["C9Alamofire26NetworkReachabilityManager", "withUnsafePointer"]
+- ["OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus", "ConnectionType"]
+- ["OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus", "NotReachable"]
+- ["OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus", "Reachable"]
+- ["OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus", "Unknown"]
+- ["OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus", "deinit"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["PSs13OptionSetType", "ConnectionOnDemand"]
+- !private ["PSs13OptionSetType", "ConnectionOnTraffic"]
+- !private ["PSs13OptionSetType", "ConnectionRequired"]
+- !private ["PSs13OptionSetType", "Element"]
+- !private ["PSs13OptionSetType", "InterventionRequired"]
+- !private ["PSs13OptionSetType", "IsWWAN"]
+- !private ["PSs13OptionSetType", "RawValue"]
+- !private ["PSs13OptionSetType", "Reachable"]
+- !private ["PSs13OptionSetType", "contains"]
+- !private ["PSs13OptionSetType", "init"]
+- ["Sq", "Some"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["PSs21RandomAccessIndexType", "init"]
+- !private ["PSs16RawRepresentable", "ConnectionOnDemand"]
+- !private ["PSs16RawRepresentable", "ConnectionOnTraffic"]
+- !private ["PSs16RawRepresentable", "ConnectionRequired"]
+- !private ["PSs16RawRepresentable", "Element"]
+- !private ["PSs16RawRepresentable", "InterventionRequired"]
+- !private ["PSs16RawRepresentable", "IsWWAN"]
+- !private ["PSs16RawRepresentable", "RawValue"]
+- !private ["PSs16RawRepresentable", "Reachable"]
+- !private ["PSs16RawRepresentable", "contains"]
+- !private ["PSs16RawRepresentable", "init"]
+- !private ["VSC28SCNetworkReachabilityContext", "info"]
+- !private ["VSC28SCNetworkReachabilityContext", "init"]
+- !private ["VSC26SCNetworkReachabilityFlags", "ConnectionOnDemand"]
+- !private ["VSC26SCNetworkReachabilityFlags", "ConnectionOnTraffic"]
+- !private ["VSC26SCNetworkReachabilityFlags", "ConnectionRequired"]
+- !private ["VSC26SCNetworkReachabilityFlags", "Element"]
+- !private ["VSC26SCNetworkReachabilityFlags", "InterventionRequired"]
+- !private ["VSC26SCNetworkReachabilityFlags", "IsWWAN"]
+- !private ["VSC26SCNetworkReachabilityFlags", "RawValue"]
+- !private ["VSC26SCNetworkReachabilityFlags", "Reachable"]
+- !private ["VSC26SCNetworkReachabilityFlags", "contains"]
+- !private ["VSC26SCNetworkReachabilityFlags", "init"]
+- !private ["PSs14SetAlgebraType", "ConnectionOnDemand"]
+- !private ["PSs14SetAlgebraType", "ConnectionOnTraffic"]
+- !private ["PSs14SetAlgebraType", "ConnectionRequired"]
+- !private ["PSs14SetAlgebraType", "Element"]
+- !private ["PSs14SetAlgebraType", "InterventionRequired"]
+- !private ["PSs14SetAlgebraType", "IsWWAN"]
+- !private ["PSs14SetAlgebraType", "RawValue"]
+- !private ["PSs14SetAlgebraType", "Reachable"]
+- !private ["PSs14SetAlgebraType", "contains"]
+- !private ["PSs14SetAlgebraType", "init"]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- !private ["PSs10Strideable", "hashValue"]
+- !private ["PSs10Strideable", "init"]
+- !private ["VSs5UInt8", "init"]
+- !private ["VSs9Unmanaged", "fromOpaque"]
+- !private ["VSs9Unmanaged", "passUnretained"]
+- !private ["VSs9Unmanaged", "takeUnretainedValue"]
+- !private ["VSs9Unmanaged", "toOpaque"]
+- !private ["VSs20UnsafeMutablePointer", "init"]
+- !private ["VSs13UnsafePointer", "init"]
+- !private ["PSs19UnsignedIntegerType", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["PSs28_DisallowMixedSignArithmetic", "init"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs14_Incrementable", "init"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "init"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs12_IntegerType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["PSs12_PointerType", "init"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs22_RandomAccessAmbiguity", "init"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+- !private ["PSs11_Strideable", "init"]
+- !private ["PSs18_StringElementType", "init"]
+- !private ["VSC12sockaddr_in6", "init"]
+- !private ["VSC12sockaddr_in6", "sin6_family"]
+- !private ["VSC12sockaddr_in6", "sin6_len"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "VSs14COpaquePointer"
+- !private "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- "OC9Alamofire26NetworkReachabilityManager14ConnectionType"
+- "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- "SQ"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "C9Alamofire26NetworkReachabilityManager"
+- "OC9Alamofire26NetworkReachabilityManager25NetworkReachabilityStatus"
+- "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- "Sq"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs16RawRepresentable"
+- !private "VSC28SCNetworkReachabilityContext"
+- !private "VSC26SCNetworkReachabilityFlags"
+- !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "VSs5UInt8"
+- !private "VSs9Unmanaged"
+- !private "VSs20UnsafeMutablePointer"
+- !private "VSs13UnsafePointer"
+- !private "PSs19UnsignedIntegerType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs28_DisallowMixedSignArithmetic"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_PointerType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+- !private "PSs18_StringElementType"
+- !private "VSC12sockaddr_in6"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Rohan/Development/Xcode/Catch Up/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "d51292c6950d7756bdcd68773f6274ce"

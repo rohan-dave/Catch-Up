@@ -4,6 +4,33 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/Rohan/Development/Xcode/Catch Up/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers",
       'contents': [
         {

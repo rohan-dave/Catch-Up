@@ -1,11 +1,94 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Post"
 provides-nominal:
+- "C8Catch_Up4Post"
 provides-member:
+- ["C8Catch_Up4Post", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
+- "Dictionary"
+- !private "StringLiteralType"
+- "Post"
+- "AnyObject"
 depends-member:
+- !private ["PSs9AnyObject", "_imageUrl"]
+- !private ["PSs9AnyObject", "_postDescription"]
+- !private ["PSs9AnyObject", "_postKey"]
+- !private ["PSs9AnyObject", "_username"]
+- !private ["PSs9AnyObject", "imageUrl"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["VSs10Dictionary", "Index"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["PSs28DictionaryLiteralConvertible", "Index"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- ["C8Catch_Up4Post", "AnyObject"]
+- ["C8Catch_Up4Post", "Dictionary"]
+- ["C8Catch_Up4Post", "String"]
+- !private ["C8Catch_Up4Post", "_imageUrl"]
+- !private ["C8Catch_Up4Post", "_postDescription"]
+- !private ["C8Catch_Up4Post", "_postKey"]
+- !private ["C8Catch_Up4Post", "_username"]
+- ["C8Catch_Up4Post", "deinit"]
+- ["C8Catch_Up4Post", "imageUrl"]
+- ["C8Catch_Up4Post", "init"]
+- ["C8Catch_Up4Post", "postDescription"]
+- ["C8Catch_Up4Post", "postKey"]
+- ["C8Catch_Up4Post", "username"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs12_Reflectable", "Index"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "subscript"]
 depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs14CollectionType"
+- "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "PSs13GeneratorType"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- "C8Catch_Up4Post"
+- !private "PSs12SequenceType"
+- !private "VSs5Slice"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -29,5 +112,8 @@ depends-external:
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthData.h"
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-umbrella.h"
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+interface-hash: "8c92ecf73a57ed94f20584198ad46d72"

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>ACCB1F46BE3728BF0FF8DD5796E2B10B</key>
+		<key>199502AD70E0D47990B3D9239C3A995E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
