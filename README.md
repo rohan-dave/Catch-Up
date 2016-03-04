@@ -3,4 +3,3 @@ A social app with no "friend list" restriction, so the user can share openly wit
 
 
 ![alt tag](https://cloud.githubusercontent.com/assets/8655417/13531345/09e0c704-e1f4-11e5-8ad3-910c0108eec1.png)
-![](https://cloud.githubusercontent.com/assets/8655417/13531345/09e0c704-e1f4-11e5-8ad3-910c0108eec1.png= 100x20)
