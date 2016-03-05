@@ -1,5 +1,5 @@
 # Catch-Up
-A social app with no "friend list" restriction, so the user can share openly with anyone around the world. Developed for iOS with Swift 2.0 and Firebase to store data. The app features a real-time feed where the user can see other users posts. 
+A social app with no "friend list" restriction, so the user can share openly with anyone around the world. Developed for iOS with Swift 2.0, Firebase to store user data and ImageShack API to store images. The app features a real-time feed where the user can see other users posts. 
 
 ![Alt text](https://cloud.githubusercontent.com/assets/8655417/13544398/b01041d2-e243-11e5-8174-ddeb75cea1c5.png) 
 ![Alt text](https://cloud.githubusercontent.com/assets/8655417/13544402/b69717ce-e243-11e5-884f-251d5017d58b.png)
