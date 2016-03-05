@@ -79,11 +79,11 @@
 		1CBD7BDB1C87C51500890B90 /* Catch Up */ = {
 			isa = PBXGroup;
 			children = (
-				1CBD7BF51C8810B600890B90 /* Services */,
-				1CBD7BF41C88090100890B90 /* Controller */,
-				1CBD7BF31C8808FB00890B90 /* View */,
-				1CBD7BF21C8808F500890B90 /* Model */,
 				1CBD7BE01C87C51500890B90 /* Main.storyboard */,
+				1CBD7BF51C8810B600890B90 /* Services */,
+				1CBD7BF21C8808F500890B90 /* Model */,
+				1CBD7BF31C8808FB00890B90 /* View */,
+				1CBD7BF41C88090100890B90 /* Controller */,
 				1CBD7BE31C87C51500890B90 /* Assets.xcassets */,
 				1CBD7BDC1C87C51500890B90 /* AppDelegate.swift */,
 				1CBD7BE51C87C51500890B90 /* LaunchScreen.storyboard */,

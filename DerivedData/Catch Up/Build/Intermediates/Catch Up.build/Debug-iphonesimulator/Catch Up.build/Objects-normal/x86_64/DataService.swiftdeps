@@ -8,15 +8,17 @@ provides-member:
 - ["C8Catch_Up11DataServcie", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "URL_BASE"
-- "Dictionary"
-- "Firebase"
 - "DataServcie"
+- "Firebase"
+- !private "NSUserDefaults"
 - "StringLiteralType"
+- "URL_BASE"
+- "String"
+- "Dictionary"
 depends-member:
 - ["PSs9AnyObject", "DataServcie"]
 - ["PSs9AnyObject", "Firebase"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "REF_USERS"]
 - ["PSs9AnyObject", "URL_BASE"]
 - !private ["PSs9AnyObject", "_REF_BASE"]
@@ -25,23 +27,31 @@ depends-member:
 - !private ["PSs9AnyObject", "childByAppendingPath"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "setValue"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
+- !private ["PSs9AnyObject", "valueForKey"]
 - ["PSs9AnyObject", ""]
 - ["Sb", "deinit"]
 - !private ["PSs11CVarArgType", "childByAppendingPath"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "setValue"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
+- !private ["PSs11CVarArgType", "valueForKey"]
 - ["VSs9Character", "deinit"]
 - ["PSs10Comparable", "init"]
 - ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "childByAppendingPath"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "setValue"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "valueForKey"]
 - ["C8Catch_Up11DataServcie", "DataServcie"]
 - ["C8Catch_Up11DataServcie", "Dictionary"]
 - ["C8Catch_Up11DataServcie", "Firebase"]
+- !private ["C8Catch_Up11DataServcie", "NSUserDefaults"]
 - ["C8Catch_Up11DataServcie", "REF_BASE"]
 - ["C8Catch_Up11DataServcie", "REF_POSTS"]
 - ["C8Catch_Up11DataServcie", "REF_USERS"]
+- ["C8Catch_Up11DataServcie", "REF_USER_CURRENT"]
 - ["C8Catch_Up11DataServcie", "String"]
 - ["C8Catch_Up11DataServcie", "URL_BASE"]
 - !private ["C8Catch_Up11DataServcie", "_REF_BASE"]
@@ -56,6 +66,8 @@ depends-member:
 - !private ["PSs9Equatable", "childByAppendingPath"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "setValue"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
+- !private ["PSs9Equatable", "valueForKey"]
 - ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["CSo6FQuery", "childByAppendingPath"]
 - ["CSo6FQuery", "init"]
@@ -67,6 +79,8 @@ depends-member:
 - !private ["PSs8Hashable", "childByAppendingPath"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "setValue"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
+- !private ["PSs8Hashable", "valueForKey"]
 - ["SQ", "deinit"]
 - ["Si", "deinit"]
 - ["VSs5Int16", "deinit"]
@@ -80,11 +94,18 @@ depends-member:
 - !private ["CSo8NSObject", "childByAppendingPath"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "valueForKey"]
 - !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "valueForKey"]
+- !private ["Sq", "deinit"]
 - ["PSs16OutputStreamType", "init"]
 - ["PSs10Streamable", "init"]
 - ["SS", "init"]
@@ -136,6 +157,8 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- !private "CSo14NSUserDefaults"
+- !private "Sq"
 - "PSs16OutputStreamType"
 - "PSs10Streamable"
 - "SS"
@@ -183,4 +206,4 @@ depends-external:
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "9eb6c8befeb47495e5505d2d5f13a260"
+interface-hash: "2baa162e2c2b84092f98008b6e650bbe"

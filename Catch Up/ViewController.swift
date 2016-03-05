@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -14,9 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     override func
         
-        viewDidLoad() {
+    viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //If the user is already logged in take them straight to the next screen
+        if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil {
+            self.performSegueWithIdentifier("loginComplete", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {

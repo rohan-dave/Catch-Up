@@ -109,46 +109,60 @@ SWIFT_CLASS("_TtC8Catch_Up11AppDelegate")
 @end
 
 @class NSCache;
+@class UIImagePickerController;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UITapGestureRecognizer;
+@class UIImage;
+@class UIImageView;
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8Catch_Up6FeedVC")
-@interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource>
 + (NSCache * __nonnull)imageCache;
-+ (void)setImageCache:(NSCache * __nonnull)value;
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified postImg;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified postField;
+@property (nonatomic, strong) UIImagePickerController * __null_unspecified imagePicker;
 - (void)viewDidLoad;
+- (void)initObservers;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * __nonnull)tableView;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (IBAction)selectPhoto:(UITapGestureRecognizer * __nonnull)sender;
+- (IBAction)makePost:(id __nonnull)sender;
+- (void)postToFirebase:(NSString * __nullable)imgUrl;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingImage:(UIImage * __nonnull)image editingInfo:(NSDictionary<NSString *, id> * __nullable)editingInfo;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
+@class Firebase;
 @class UITextView;
 
 SWIFT_CLASS("_TtC8Catch_Up8PostCell")
 @interface PostCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified profileImage;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified photoPost;
-@property (nonatomic, weak) IBOutlet UITextView * __null_unspecified postText;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified appImg;
+@property (nonatomic, weak) IBOutlet UITextView * __null_unspecified descriptionText;
+@property (nonatomic, strong) Firebase * __null_unspecified likeRef;
 - (void)awakeFromNib;
 - (void)drawRect:(CGRect)rect;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
 
 SWIFT_CLASS("_TtC8Catch_Up14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified password;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified email;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)wrongTextError:(NSString * __nonnull)title msg:(NSString * __nonnull)msg;
 - (IBAction)loginPressed:(id __nonnull)sender;

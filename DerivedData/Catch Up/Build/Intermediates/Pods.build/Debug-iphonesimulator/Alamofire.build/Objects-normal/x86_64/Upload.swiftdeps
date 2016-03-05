@@ -22,51 +22,48 @@ provides-member:
 - ["C9Alamofire7Manager", "upload"]
 - ["C9Alamofire7Request", "UploadTaskDelegate"]
 provides-dynamic-lookup:
-- "uploadProgress"
-- "taskDidSendBodyData"
 - "URLSession"
 - "uploadTask"
+- "taskDidSendBodyData"
+- "uploadProgress"
 depends-top-level:
-- !private "NSURLRequest"
-- "Method"
-- "String"
-- !private "NSTemporaryDirectory"
-- "MultipartFormData"
-- "Int64"
-- "Bool"
-- "*"
-- !private "dispatch_get_global_queue"
-- "StringLiteralType"
-- "ErrorType"
-- !private "=="
-- !private "<"
-- !private "NSUUID"
-- !private "DISPATCH_QUEUE_PRIORITY_DEFAULT"
-- "NSURLSessionTask"
-- "URLStringConvertible"
-- "BooleanLiteralType"
-- "NSData"
-- "NSURLSession"
-- "Request"
-- !private "!="
-- !private "URLRequest"
-- "NSURL"
-- "NSURLSessionUploadTask"
-- !private "!"
-- "URLRequestConvertible"
-- !private "dispatch_sync"
-- !private "dispatch_async"
-- !private "dispatch_get_main_queue"
-- "UInt64"
-- !private "NSFileManager"
-- "NSInputStream"
 - !private "&&"
-- !private "CFAbsoluteTimeGetCurrent"
-- !private "NSError"
+- !private "dispatch_sync"
+- !private "!="
+- !private "<"
+- "Bool"
 - "Manager"
+- "MultipartFormData"
+- "StringLiteralType"
+- "Method"
+- "NSURLSession"
+- "*"
+- !private "dispatch_async"
+- "ErrorType"
+- "Request"
+- !private "NSURLRequest"
+- "String"
+- "NSURLSessionUploadTask"
+- "NSURL"
+- "URLRequestConvertible"
+- !private "dispatch_get_main_queue"
+- !private "NSTemporaryDirectory"
+- "UInt64"
+- "NSData"
+- "Int64"
+- "NSInputStream"
+- "NSURLSessionTask"
+- !private "dispatch_get_global_queue"
 - "Void"
+- !private "NSError"
+- !private "NSUUID"
+- !private "NSFileManager"
+- !private "DISPATCH_QUEUE_PRIORITY_DEFAULT"
+- !private "URLRequest"
+- "BooleanLiteralType"
+- "URLStringConvertible"
+- !private "!"
 depends-member:
-- !private ["PSs9AnyObject", "CFAbsoluteTimeGetCurrent"]
 - !private ["PSs9AnyObject", "DISPATCH_QUEUE_PRIORITY_DEFAULT"]
 - !private ["PSs9AnyObject", "Manager"]
 - !private ["PSs9AnyObject", "MultipartFormData"]
@@ -95,7 +92,6 @@ depends-member:
 - !private ["PSs9AnyObject", "encode"]
 - !private ["PSs9AnyObject", "identifier"]
 - ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "initialResponseTime"]
 - !private ["PSs9AnyObject", "progress"]
 - !private ["PSs9AnyObject", "queue"]
 - !private ["PSs9AnyObject", "resume"]
@@ -117,7 +113,6 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "CFAbsoluteTimeGetCurrent"]
 - !private ["PSs11CVarArgType", "URLByAppendingPathComponent"]
 - ["PSs11CVarArgType", "URLSession"]
 - !private ["PSs11CVarArgType", "UUIDString"]
@@ -127,7 +122,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "defaultManager"]
 - !private ["PSs11CVarArgType", "identifier"]
 - ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "initialResponseTime"]
 - !private ["PSs11CVarArgType", "progress"]
 - !private ["PSs11CVarArgType", "setValue"]
 - !private ["PSs11CVarArgType", "subscript"]
@@ -140,12 +134,10 @@ depends-member:
 - !private ["PSs11CVarArgType", "uploadTaskWithRequest"]
 - !private ["PSs11CVarArgType", "uploadTaskWithStreamedRequest"]
 - ["PSs11CVarArgType", ""]
-- !private ["PSs28CustomDebugStringConvertible", "CFAbsoluteTimeGetCurrent"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "delegate"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "resume"]
-- !private ["PSs23CustomStringConvertible", "CFAbsoluteTimeGetCurrent"]
 - !private ["PSs23CustomStringConvertible", "URLByAppendingPathComponent"]
 - ["PSs23CustomStringConvertible", "URLSession"]
 - !private ["PSs23CustomStringConvertible", "UUIDString"]
@@ -157,7 +149,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - !private ["PSs23CustomStringConvertible", "identifier"]
 - ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "initialResponseTime"]
 - !private ["PSs23CustomStringConvertible", "progress"]
 - !private ["PSs23CustomStringConvertible", "resume"]
 - !private ["PSs23CustomStringConvertible", "setValue"]
@@ -171,7 +162,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "uploadTaskWithRequest"]
 - !private ["PSs23CustomStringConvertible", "uploadTaskWithStreamedRequest"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["CC9Alamofire7Request16DataTaskDelegate", "CFAbsoluteTimeGetCurrent"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "Int64"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "NSURLSession"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "NSURLSessionTask"]
@@ -179,14 +169,12 @@ depends-member:
 - ["CC9Alamofire7Request16DataTaskDelegate", "URLSession"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "Void"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "init"]
-- !private ["CC9Alamofire7Request16DataTaskDelegate", "initialResponseTime"]
 - !private ["CC9Alamofire7Request16DataTaskDelegate", "progress"]
 - !private ["CC9Alamofire7Request16DataTaskDelegate", "task"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "taskDidSendBodyData"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "uploadProgress"]
 - ["CC9Alamofire7Request16DataTaskDelegate", "uploadTask"]
 - ["CC9Alamofire7Request16DataTaskDelegate", ""]
-- !private ["PSs9Equatable", "CFAbsoluteTimeGetCurrent"]
 - !private ["PSs9Equatable", "URLByAppendingPathComponent"]
 - ["PSs9Equatable", "URLSession"]
 - !private ["PSs9Equatable", "UUIDString"]
@@ -197,7 +185,6 @@ depends-member:
 - !private ["PSs9Equatable", "defaultManager"]
 - !private ["PSs9Equatable", "identifier"]
 - ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "initialResponseTime"]
 - !private ["PSs9Equatable", "progress"]
 - !private ["PSs9Equatable", "setValue"]
 - !private ["PSs9Equatable", "subscript"]
@@ -210,7 +197,6 @@ depends-member:
 - !private ["PSs9Equatable", "uploadTaskWithRequest"]
 - !private ["PSs9Equatable", "uploadTaskWithStreamedRequest"]
 - ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "CFAbsoluteTimeGetCurrent"]
 - !private ["PSs8Hashable", "URLByAppendingPathComponent"]
 - ["PSs8Hashable", "URLSession"]
 - !private ["PSs8Hashable", "UUIDString"]
@@ -221,7 +207,6 @@ depends-member:
 - !private ["PSs8Hashable", "defaultManager"]
 - !private ["PSs8Hashable", "identifier"]
 - ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "initialResponseTime"]
 - !private ["PSs8Hashable", "progress"]
 - !private ["PSs8Hashable", "setValue"]
 - !private ["PSs8Hashable", "subscript"]
@@ -294,7 +279,6 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "setValue"]
 - !private ["CSo19NSMutableURLRequest", "deinit"]
 - !private ["CSo19NSMutableURLRequest", "setValue"]
-- !private ["CSo8NSObject", "CFAbsoluteTimeGetCurrent"]
 - ["CSo8NSObject", "Int64"]
 - ["CSo8NSObject", "NSURLSession"]
 - ["CSo8NSObject", "NSURLSessionTask"]
@@ -309,7 +293,6 @@ depends-member:
 - !private ["CSo8NSObject", "defaultManager"]
 - !private ["CSo8NSObject", "identifier"]
 - !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "initialResponseTime"]
 - !private ["CSo8NSObject", "progress"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "subscript"]
@@ -321,7 +304,6 @@ depends-member:
 - ["CSo8NSObject", "uploadTask"]
 - !private ["CSo8NSObject", "uploadTaskWithRequest"]
 - !private ["CSo8NSObject", "uploadTaskWithStreamedRequest"]
-- !private ["PSo16NSObjectProtocol", "CFAbsoluteTimeGetCurrent"]
 - !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
 - ["PSo16NSObjectProtocol", "URLSession"]
 - !private ["PSo16NSObjectProtocol", "UUIDString"]
@@ -331,7 +313,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "defaultManager"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "initialResponseTime"]
 - !private ["PSo16NSObjectProtocol", "progress"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
@@ -357,10 +338,8 @@ depends-member:
 - !private ["CSo12NSURLSession", "uploadTaskWithRequest"]
 - !private ["CSo12NSURLSession", "uploadTaskWithStreamedRequest"]
 - !private ["CSo25NSURLSessionConfiguration", "identifier"]
-- !private ["PSo24NSURLSessionDataDelegate", "CFAbsoluteTimeGetCurrent"]
 - ["PSo24NSURLSessionDataDelegate", "URLSession"]
 - ["PSo24NSURLSessionDataDelegate", "init"]
-- !private ["PSo24NSURLSessionDataDelegate", "initialResponseTime"]
 - !private ["PSo24NSURLSessionDataDelegate", "progress"]
 - !private ["PSo24NSURLSessionDataDelegate", "subscript"]
 - !private ["PSo24NSURLSessionDataDelegate", "task"]
@@ -368,10 +347,8 @@ depends-member:
 - ["PSo24NSURLSessionDataDelegate", "uploadProgress"]
 - ["PSo24NSURLSessionDataDelegate", "uploadTask"]
 - ["PSo24NSURLSessionDataDelegate", ""]
-- !private ["PSo20NSURLSessionDelegate", "CFAbsoluteTimeGetCurrent"]
 - ["PSo20NSURLSessionDelegate", "URLSession"]
 - ["PSo20NSURLSessionDelegate", "init"]
-- !private ["PSo20NSURLSessionDelegate", "initialResponseTime"]
 - !private ["PSo20NSURLSessionDelegate", "progress"]
 - !private ["PSo20NSURLSessionDelegate", "subscript"]
 - !private ["PSo20NSURLSessionDelegate", "task"]
@@ -382,10 +359,8 @@ depends-member:
 - !private ["PSo28NSURLSessionDownloadDelegate", "subscript"]
 - !private ["PSo26NSURLSessionStreamDelegate", "subscript"]
 - !private ["CSo16NSURLSessionTask", "deinit"]
-- !private ["PSo24NSURLSessionTaskDelegate", "CFAbsoluteTimeGetCurrent"]
 - ["PSo24NSURLSessionTaskDelegate", "URLSession"]
 - ["PSo24NSURLSessionTaskDelegate", "init"]
-- !private ["PSo24NSURLSessionTaskDelegate", "initialResponseTime"]
 - !private ["PSo24NSURLSessionTaskDelegate", "progress"]
 - !private ["PSo24NSURLSessionTaskDelegate", "subscript"]
 - !private ["PSo24NSURLSessionTaskDelegate", "task"]
@@ -398,7 +373,6 @@ depends-member:
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["C9Alamofire7Request", "CFAbsoluteTimeGetCurrent"]
 - ["C9Alamofire7Request", "DataTaskDelegate"]
 - ["C9Alamofire7Request", "Int64"]
 - ["C9Alamofire7Request", "NSURLSession"]
@@ -410,7 +384,6 @@ depends-member:
 - !private ["C9Alamofire7Request", "init"]
 - !private ["C9Alamofire7Request", "resume"]
 - !private ["CC9Alamofire7Manager15SessionDelegate", "subscript"]
-- !private ["CC9Alamofire7Request12TaskDelegate", "CFAbsoluteTimeGetCurrent"]
 - ["CC9Alamofire7Request12TaskDelegate", "Int64"]
 - ["CC9Alamofire7Request12TaskDelegate", "NSURLSession"]
 - ["CC9Alamofire7Request12TaskDelegate", "NSURLSessionTask"]
@@ -418,7 +391,6 @@ depends-member:
 - ["CC9Alamofire7Request12TaskDelegate", "URLSession"]
 - ["CC9Alamofire7Request12TaskDelegate", "Void"]
 - ["CC9Alamofire7Request12TaskDelegate", "init"]
-- !private ["CC9Alamofire7Request12TaskDelegate", "initialResponseTime"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "progress"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "task"]
 - ["CC9Alamofire7Request12TaskDelegate", "taskDidSendBodyData"]
@@ -430,7 +402,6 @@ depends-member:
 - !private ["P9Alamofire20URLStringConvertible", "URLByAppendingPathComponent"]
 - !private ["P9Alamofire20URLStringConvertible", "init"]
 - !private ["P9Alamofire20URLStringConvertible", "setValue"]
-- !private ["CC9Alamofire7Request18UploadTaskDelegate", "CFAbsoluteTimeGetCurrent"]
 - ["CC9Alamofire7Request18UploadTaskDelegate", "Int64"]
 - ["CC9Alamofire7Request18UploadTaskDelegate", "NSURLSession"]
 - ["CC9Alamofire7Request18UploadTaskDelegate", "NSURLSessionTask"]
@@ -439,7 +410,6 @@ depends-member:
 - ["CC9Alamofire7Request18UploadTaskDelegate", "Void"]
 - ["CC9Alamofire7Request18UploadTaskDelegate", "deinit"]
 - ["CC9Alamofire7Request18UploadTaskDelegate", "init"]
-- !private ["CC9Alamofire7Request18UploadTaskDelegate", "initialResponseTime"]
 - !private ["CC9Alamofire7Request18UploadTaskDelegate", "progress"]
 - !private ["CC9Alamofire7Request18UploadTaskDelegate", "task"]
 - ["CC9Alamofire7Request18UploadTaskDelegate", "taskDidSendBodyData"]

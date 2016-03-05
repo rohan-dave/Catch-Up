@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import Alamofire
 
 class Post {
     
@@ -15,6 +16,8 @@ class Post {
     private var _imageUrl: String?
     private var _username: String!
     private var _postKey: String!
+    private var _likes: Int!
+    private var _postRef: Firebase!
     
     var postDescription: String! {
         return _postDescription
@@ -25,7 +28,7 @@ class Post {
     }
     
     var username: String! {
-        return _imageUrl
+        return _username
     }
     
     var postKey: String! {
@@ -45,12 +48,14 @@ class Post {
         
         if let imgUrl = dictionary["imageUrl"] as? String
         {
-            self._imageUrl = imageUrl
+            self._imageUrl = imgUrl
         }
         
         if let desc =  dictionary["description"] as? String
         {
             self._postDescription = desc
         }
+        
+        self._postRef = DataServcie.ds.REF_POSTS.childByAppendingPath(self._postKey)
     }
 }

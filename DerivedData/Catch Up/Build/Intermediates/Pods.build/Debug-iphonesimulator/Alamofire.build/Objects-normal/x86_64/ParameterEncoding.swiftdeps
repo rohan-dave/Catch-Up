@@ -10,35 +10,35 @@ provides-member:
 - ["O9Alamofire17ParameterEncoding", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "URLRequestConvertible"
-- !private "BooleanLiteralType"
-- !private "UnicodeScalarType"
-- !private "!"
-- "NSPropertyListFormat"
-- !private "NSUTF8StringEncoding"
-- !private "Bool"
-- "NSError"
-- "NSPropertyListWriteOptions"
-- !private "??"
-- !private "<"
-- "NSMutableURLRequest"
 - !private "+"
-- !private "NSJSONWritingOptions"
-- !private "NSURLComponents"
 - !private "NSCharacterSet"
 - "ParameterEncoding"
-- "Method"
-- "AnyObject"
-- !private "Range"
-- "StringLiteralType"
+- !private "!="
+- !private "<"
 - !private "~="
 - "=="
+- !private "NSUTF8StringEncoding"
+- !private "Array"
 - !private "NSPropertyListSerialization"
-- !private "+="
-- !private "!="
+- "StringLiteralType"
+- !private "??"
+- !private "UnicodeScalarType"
+- "NSMutableURLRequest"
+- !private "Bool"
+- !private "Range"
+- "AnyObject"
+- !private "NSURLComponents"
 - "String"
-- !private "NSJSONSerialization"
+- "NSError"
+- !private "NSJSONWritingOptions"
+- "NSPropertyListFormat"
+- !private "+="
+- "NSPropertyListWriteOptions"
+- "Method"
+- !private "BooleanLiteralType"
+- "URLRequestConvertible"
 - !private "NSMutableCharacterSet"
+- !private "NSJSONSerialization"
 depends-member:
 - !private ["PSs9AnyObject", "HTTPBody"]
 - !private ["PSs9AnyObject", "HTTPMethod"]
@@ -64,8 +64,10 @@ depends-member:
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "init"]
 - !private ["Sa", "joinWithSeparator"]
 - !private ["Sa", "map"]
+- !private ["Sa", "sort"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
@@ -77,6 +79,7 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "joinWithSeparator"]
 - !private ["PSs23ArrayLiteralConvertible", "map"]
+- !private ["PSs23ArrayLiteralConvertible", "sort"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
@@ -119,7 +122,6 @@ depends-member:
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
 - !private ["PSs14CollectionType", "init"]
-- !private ["PSs14CollectionType", "isEmpty"]
 - !private ["PSs14CollectionType", "joinWithSeparator"]
 - !private ["PSs14CollectionType", "keys"]
 - !private ["PSs14CollectionType", "map"]
@@ -146,10 +148,10 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
 - !private ["PSs28CustomDebugStringConvertible", "endIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
-- !private ["PSs28CustomDebugStringConvertible", "isEmpty"]
 - !private ["PSs28CustomDebugStringConvertible", "joinWithSeparator"]
 - !private ["PSs28CustomDebugStringConvertible", "keys"]
 - !private ["PSs28CustomDebugStringConvertible", "map"]
+- !private ["PSs28CustomDebugStringConvertible", "sort"]
 - !private ["PSs28CustomDebugStringConvertible", "startIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
@@ -173,7 +175,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "endIndex"]
 - !private ["PSs23CustomStringConvertible", "hashValue"]
 - !private ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "isEmpty"]
 - !private ["PSs23CustomStringConvertible", "joinWithSeparator"]
 - !private ["PSs23CustomStringConvertible", "keys"]
 - !private ["PSs23CustomStringConvertible", "map"]
@@ -181,6 +182,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "percentEncodedQuery"]
 - !private ["PSs23CustomStringConvertible", "removeCharactersInString"]
 - !private ["PSs23CustomStringConvertible", "setValue"]
+- !private ["PSs23CustomStringConvertible", "sort"]
 - !private ["PSs23CustomStringConvertible", "startIndex"]
 - !private ["PSs23CustomStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
@@ -191,7 +193,6 @@ depends-member:
 - !private ["VSs10Dictionary", "SubSequence"]
 - !private ["VSs10Dictionary", "_Element"]
 - !private ["VSs10Dictionary", "deinit"]
-- !private ["VSs10Dictionary", "isEmpty"]
 - !private ["VSs10Dictionary", "keys"]
 - !private ["VSs10Dictionary", "subscript"]
 - !private ["VSs19DictionaryGenerator", "Element"]
@@ -201,7 +202,6 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "Index"]
 - !private ["PSs28DictionaryLiteralConvertible", "SubSequence"]
 - !private ["PSs28DictionaryLiteralConvertible", "_Element"]
-- !private ["PSs28DictionaryLiteralConvertible", "isEmpty"]
 - !private ["PSs28DictionaryLiteralConvertible", "keys"]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
@@ -286,7 +286,6 @@ depends-member:
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
 - !private ["PSs9Indexable", "init"]
-- !private ["PSs9Indexable", "isEmpty"]
 - !private ["PSs9Indexable", "joinWithSeparator"]
 - !private ["PSs9Indexable", "keys"]
 - !private ["PSs9Indexable", "map"]
@@ -311,12 +310,9 @@ depends-member:
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
 - !private ["PSs11IntegerType", "hashValue"]
 - !private ["PSs18LazyCollectionType", "Generator"]
-- !private ["PSs18LazyCollectionType", "sort"]
 - !private ["VSs17LazyMapCollection", "Generator"]
-- !private ["VSs17LazyMapCollection", "sort"]
 - !private ["VSs16LazyMapGenerator", "Element"]
 - !private ["PSs16LazySequenceType", "Generator"]
-- !private ["PSs16LazySequenceType", "sort"]
 - ["O9Alamofire6Method", "CONNECT"]
 - ["O9Alamofire6Method", "DELETE"]
 - ["O9Alamofire6Method", "GET"]
@@ -346,24 +342,30 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "_Buffer"]
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "init"]
 - !private ["PSs21MutableCollectionType", "joinWithSeparator"]
 - !private ["PSs21MutableCollectionType", "map"]
+- !private ["PSs21MutableCollectionType", "sort"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Buffer"]
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "init"]
 - !private ["PSs16MutableIndexable", "joinWithSeparator"]
 - !private ["PSs16MutableIndexable", "map"]
+- !private ["PSs16MutableIndexable", "sort"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Buffer"]
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "init"]
 - !private ["PSs16MutableSliceable", "joinWithSeparator"]
 - !private ["PSs16MutableSliceable", "map"]
+- !private ["PSs16MutableSliceable", "sort"]
 - !private ["CSo14NSCharacterSet", "URLQueryAllowedCharacterSet"]
 - !private ["CSo14NSCharacterSet", "mutableCopy"]
 - !private ["CSo14NSCharacterSet", "removeCharactersInString"]
@@ -498,6 +500,7 @@ depends-member:
 - !private ["PSs16OutputStreamType", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs16OutputStreamType", "substringWithRange"]
 - ["O9Alamofire17ParameterEncoding", "AnyObject"]
+- !private ["O9Alamofire17ParameterEncoding", "Array"]
 - !private ["O9Alamofire17ParameterEncoding", "Bool"]
 - ["O9Alamofire17ParameterEncoding", "Custom"]
 - ["O9Alamofire17ParameterEncoding", "JSON"]
@@ -533,8 +536,10 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "_Buffer"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "init"]
 - !private ["PSs30RangeReplaceableCollectionType", "joinWithSeparator"]
 - !private ["PSs30RangeReplaceableCollectionType", "map"]
+- !private ["PSs30RangeReplaceableCollectionType", "sort"]
 - !private ["PSs16RawRepresentable", "DELETE"]
 - !private ["PSs16RawRepresentable", "Element"]
 - !private ["PSs16RawRepresentable", "GET"]
@@ -552,7 +557,6 @@ depends-member:
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
 - !private ["PSs12SequenceType", "init"]
-- !private ["PSs12SequenceType", "isEmpty"]
 - !private ["PSs12SequenceType", "joinWithSeparator"]
 - !private ["PSs12SequenceType", "keys"]
 - !private ["PSs12SequenceType", "map"]
@@ -637,8 +641,10 @@ depends-member:
 - !private ["PSs10_ArrayType", "_Buffer"]
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "init"]
 - !private ["PSs10_ArrayType", "joinWithSeparator"]
 - !private ["PSs10_ArrayType", "map"]
+- !private ["PSs10_ArrayType", "sort"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "endIndex"]
@@ -679,8 +685,10 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "_Buffer"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "joinWithSeparator"]
 - !private ["PSs24_DestructorSafeContainer", "map"]
+- !private ["PSs24_DestructorSafeContainer", "sort"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
@@ -705,10 +713,10 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "endIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
-- !private ["PSs21_ObjectiveCBridgeable", "isEmpty"]
 - !private ["PSs21_ObjectiveCBridgeable", "joinWithSeparator"]
 - !private ["PSs21_ObjectiveCBridgeable", "keys"]
 - !private ["PSs21_ObjectiveCBridgeable", "map"]
+- !private ["PSs21_ObjectiveCBridgeable", "sort"]
 - !private ["PSs21_ObjectiveCBridgeable", "startIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
@@ -732,10 +740,10 @@ depends-member:
 - !private ["PSs12_Reflectable", "endIndex"]
 - !private ["PSs12_Reflectable", "hashValue"]
 - !private ["PSs12_Reflectable", "init"]
-- !private ["PSs12_Reflectable", "isEmpty"]
 - !private ["PSs12_Reflectable", "joinWithSeparator"]
 - !private ["PSs12_Reflectable", "keys"]
 - !private ["PSs12_Reflectable", "map"]
+- !private ["PSs12_Reflectable", "sort"]
 - !private ["PSs12_Reflectable", "startIndex"]
 - !private ["PSs12_Reflectable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSs12_Reflectable", "subscript"]

@@ -6,26 +6,28 @@ provides-nominal:
 provides-member:
 - ["C8Catch_Up14ViewController", ""]
 provides-dynamic-lookup:
+- "password"
+- "loginPressed"
 - "wrongTextError"
 - "viewDidLoad"
-- "password"
 - "email"
+- "viewDidAppear"
 - "didReceiveMemoryWarning"
-- "loginPressed"
 depends-top-level:
-- !private "UIAlertController"
-- !private "StringLiteralType"
-- !private "DataServcie"
-- "AnyObject"
-- !private "BooleanLiteralType"
-- !private "=="
-- !private "NSUserDefaults"
-- "ViewController"
-- !private "UIAlertAction"
-- "UIViewController"
-- "UITextField"
-- "String"
 - "Dictionary"
+- "String"
+- !private "UIAlertAction"
+- !private "=="
+- !private "StringLiteralType"
+- !private "NSUserDefaults"
+- "UITextField"
+- "AnyObject"
+- !private "UIAlertController"
+- "Bool"
+- "ViewController"
+- !private "BooleanLiteralType"
+- !private "DataServcie"
+- "UIViewController"
 - !private "!="
 depends-member:
 - !private ["PSs9AnyObject", "DataServcie"]
@@ -37,6 +39,7 @@ depends-member:
 - !private ["PSs9AnyObject", "authUser"]
 - !private ["PSs9AnyObject", "code"]
 - !private ["PSs9AnyObject", "createUser"]
+- !private ["PSs9AnyObject", "deinit"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "ds"]
 - ["PSs9AnyObject", "email"]
@@ -50,6 +53,8 @@ depends-member:
 - !private ["PSs9AnyObject", "standardUserDefaults"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "uid"]
+- !private ["PSs9AnyObject", "valueForKey"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "wrongTextError"]
 - ["PSs9AnyObject", ""]
@@ -79,6 +84,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "standardUserDefaults"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "uid"]
+- !private ["PSs11CVarArgType", "valueForKey"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "wrongTextError"]
 - ["PSs11CVarArgType", ""]
@@ -129,6 +136,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "uid"]
+- !private ["PSs23CustomStringConvertible", "valueForKey"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "wrongTextError"]
 - ["PSs23CustomStringConvertible", ""]
@@ -178,6 +187,8 @@ depends-member:
 - !private ["PSs9Equatable", "standardUserDefaults"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "uid"]
+- !private ["PSs9Equatable", "valueForKey"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "wrongTextError"]
 - ["PSs9Equatable", ""]
@@ -216,6 +227,8 @@ depends-member:
 - !private ["PSs8Hashable", "standardUserDefaults"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "uid"]
+- !private ["PSs8Hashable", "valueForKey"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "wrongTextError"]
 - ["PSs8Hashable", ""]
@@ -247,6 +260,7 @@ depends-member:
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "wrongTextError"]
 - ["PSo8NSCoding", ""]
@@ -266,10 +280,12 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "password"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "wrongTextError"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "DataServcie"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "String"]
@@ -293,6 +309,8 @@ depends-member:
 - !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "valueForKey"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "wrongTextError"]
 - !private ["PSo16NSObjectProtocol", "DataServcie"]
@@ -315,12 +333,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "wrongTextError"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "code"]
 - !private ["CSo14NSUserDefaults", "setValue"]
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "valueForKey"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -364,6 +385,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "wrongTextError"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -379,6 +401,7 @@ depends-member:
 - ["PSo18UIContentContainer", "password"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "wrongTextError"]
 - ["PSo18UIContentContainer", ""]
@@ -398,11 +421,13 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "wrongTextError"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo10UIKeyInput", "text"]
 - ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "DataServcie"]
 - !private ["CSo11UIResponder", "NSUserDefaults"]
 - ["CSo11UIResponder", "String"]
@@ -418,6 +443,7 @@ depends-member:
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "wrongTextError"]
 - !private ["PSo16UIStateRestoring", "DataServcie"]
@@ -432,6 +458,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "password"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "wrongTextError"]
 - ["PSo16UIStateRestoring", ""]
@@ -451,11 +478,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "wrongTextError"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "DataServcie"]
 - !private ["CSo16UIViewController", "NSUserDefaults"]
 - ["CSo16UIViewController", "String"]
@@ -470,10 +499,12 @@ depends-member:
 - ["CSo16UIViewController", "password"]
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - !private ["CSo16UIViewController", "presentViewController"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "wrongTextError"]
 - ["CSo16UIViewController", ""]
 - ["C8Catch_Up14ViewController", "AnyObject"]
+- ["C8Catch_Up14ViewController", "Bool"]
 - !private ["C8Catch_Up14ViewController", "DataServcie"]
 - !private ["C8Catch_Up14ViewController", "NSUserDefaults"]
 - ["C8Catch_Up14ViewController", "String"]
@@ -488,6 +519,7 @@ depends-member:
 - ["C8Catch_Up14ViewController", "password"]
 - !private ["C8Catch_Up14ViewController", "performSegueWithIdentifier"]
 - !private ["C8Catch_Up14ViewController", "presentViewController"]
+- ["C8Catch_Up14ViewController", "viewDidAppear"]
 - ["C8Catch_Up14ViewController", "viewDidLoad"]
 - ["C8Catch_Up14ViewController", "wrongTextError"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -631,4 +663,4 @@ depends-external:
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
 - "/Users/Rohan/Development/Xcode/Catch Up/DerivedData/Catch Up/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "77c186cd8d1684c906281add9debefd5"
+interface-hash: "cae854eca9067bb231925e7fff698cb2"

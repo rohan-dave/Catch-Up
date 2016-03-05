@@ -135,12 +135,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtCC9Alamofire7Manager15SessionDelegate")
 @interface SessionDelegate : NSObject <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate>
 
-/// Initializes the SessionDelegate instance.
-///
-/// \returns  The new <code>SessionDelegate
-/// </code> instance.
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-
 /// Overrides default behavior for NSURLSessionDelegate method URLSession:didBecomeInvalidWithError:.
 @property (nonatomic, copy) void (^ __nullable sessionDidBecomeInvalidWithError)(NSURLSession * __nonnull, NSError * __nullable);
 
@@ -348,6 +342,7 @@ SWIFT_CLASS("_TtCC9Alamofire7Manager15SessionDelegate")
 /// If this header was not provided, the value is NSURLSessionTransferSizeUnknown.
 - (void)URLSession:(NSURLSession * __nonnull)session downloadTask:(NSURLSessionDownloadTask * __nonnull)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes;
 - (BOOL)respondsToSelector:(SEL __null_unspecified)selector;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSURLSessionStreamTask;

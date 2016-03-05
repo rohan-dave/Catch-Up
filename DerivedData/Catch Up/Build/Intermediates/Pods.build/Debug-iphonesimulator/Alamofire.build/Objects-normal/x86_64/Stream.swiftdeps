@@ -10,27 +10,27 @@ provides-member:
 - ["C9Alamofire7Manager", "stream"]
 - ["C9Alamofire7Manager", "stream"]
 provides-dynamic-lookup:
-- "streamTaskReadClosed"
-- "streamTaskWriteClosed"
-- "streamTaskBetterRouteDiscovered"
 - "streamTaskDidBecomeInputStream"
 - "URLSession"
 - "URLSession"
 - "URLSession"
 - "URLSession"
+- "streamTaskWriteClosed"
+- "streamTaskBetterRouteDiscovered"
+- "streamTaskReadClosed"
 depends-top-level:
-- "Void"
-- "Request"
-- "Int"
-- !private "dispatch_sync"
-- "Manager"
-- "NSNetService"
-- "NSURLSession"
-- "NSInputStream"
-- "String"
-- "NSURLSessionStreamDelegate"
-- "NSOutputStream"
 - "NSURLSessionStreamTask"
+- "NSNetService"
+- "NSOutputStream"
+- "Manager"
+- "NSURLSession"
+- !private "dispatch_sync"
+- "Request"
+- "NSInputStream"
+- "Void"
+- "NSURLSessionStreamDelegate"
+- "Int"
+- "String"
 depends-member:
 - !private ["PSs9AnyObject", "NetService"]
 - !private ["PSs9AnyObject", "Request"]
@@ -296,4 +296,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "50f2f4f18ae41441d6dea0e458adb96e"
+interface-hash: "b665258a73b2b5e48fa2e51978e36613"

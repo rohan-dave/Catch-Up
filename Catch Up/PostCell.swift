@@ -8,15 +8,22 @@
 
 import UIKit
 import Alamofire
+import Firebase
 
 class PostCell: UITableViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var photoPost: UIImageView!
-    @IBOutlet weak var postText: UITextView!
+    @IBOutlet weak var appImg: UIImageView!
+    @IBOutlet weak var descriptionText: UITextView!
     
-    var post: Post!
+    private var _post: Post?
+    
+    var post: Post? {
+        return _post
+    }
+    
     var request: Request?
+    var likeRef: Firebase!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,39 +34,45 @@ class PostCell: UITableViewCell {
         profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
         profileImage.clipsToBounds = true
         
-        photoPost.clipsToBounds = true
+        appImg.clipsToBounds = true
     }
     
-    func configureCell(post: Post, img:UIImage?) {
+    func configureCell(post: Post, img: UIImage?) {
         
-        self.post = post
-        self.postText.text = post.postDescription
+        //Clear existing image (because its old)
+        self.appImg.image = nil
+        self._post = post
+        self.likeRef = DataServcie.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
         
-        if post.imageUrl != nil
-        {
-            if img != nil
-            {
-                self.photoPost.image = img
-            }
-            else
-            {
+        if let desc = post.postDescription where post.postDescription != "" {
+            self.descriptionText.text = desc
+        }
+        else {
+            self.descriptionText.hidden = true
+        }
+        
+       // self.likesLbl.text = "\(post.likes)"
+        
+        if post.imageUrl != nil {
+            //Use the cached image if there is one, otherwise download the image
+            if img != nil {
+                appImg.image = img!
+            } else {
+                //Must store the request so we can cancel it later if this cell is now out of the users view
                 request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
                     
-                    if ( err == nil )
-                    {
+                    if err == nil {
                         let img = UIImage(data: data!)!
-                        self.photoPost.image = img
-                        FeedVC.imageCache.setObject(img, forKey: self.post.imageUrl!)
+                        self.appImg.image = img
+                        FeedVC.imageCache.setObject(img, forKey: self.post!.imageUrl!)
                     }
                 })
             }
+            
         }
-        else
-        {
-            self.photoPost.hidden = true
+        else {
+            self.appImg.hidden = true
         }
-        
-        
-    }
 
+    }
 }

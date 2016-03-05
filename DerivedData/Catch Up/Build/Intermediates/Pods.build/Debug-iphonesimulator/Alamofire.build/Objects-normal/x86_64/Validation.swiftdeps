@@ -15,39 +15,36 @@ provides-member:
 - ["C9Alamofire7Request", "validate"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "&&"
 - !private "??"
-- "Request"
-- !private "String"
-- "UnicodeScalarType"
-- "StringLiteralType"
+- !private "&&"
 - "NSURLRequest"
-- !private "=="
+- !private "+"
 - !private "~="
+- !private "=="
 - !private "SequenceType"
+- !private "String"
+- "StringLiteralType"
+- "Request"
+- !private "NSCharacterSet"
 - !private "Range"
 - !private "Bool"
-- !private ">"
-- !private "Int"
-- !private "NSCharacterSet"
-- !private "BooleanLiteralType"
-- !private "Error"
-- "NSError"
 - !private "..<"
 - "NSHTTPURLResponse"
-- !private "+"
+- !private "Error"
+- !private "BooleanLiteralType"
+- "ErrorType"
+- !private "Int"
+- "UnicodeScalarType"
 depends-member:
 - !private ["PSs9AnyObject", "Error"]
 - !private ["PSs9AnyObject", "MIMEType"]
 - !private ["PSs9AnyObject", "NSCharacterSet"]
 - !private ["PSs9AnyObject", "addOperationWithBlock"]
 - !private ["PSs9AnyObject", "componentsSeparatedByString"]
-- !private ["PSs9AnyObject", "data"]
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "endIndex"]
 - !private ["PSs9AnyObject", "error"]
 - !private ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "length"]
 - !private ["PSs9AnyObject", "queue"]
 - !private ["PSs9AnyObject", "rangeOfString"]
 - !private ["PSs9AnyObject", "request"]
@@ -93,11 +90,9 @@ depends-member:
 - !private ["PSs11CVarArgType", "_DisabledRangeIndex"]
 - !private ["PSs11CVarArgType", "addOperationWithBlock"]
 - !private ["PSs11CVarArgType", "componentsSeparatedByString"]
-- !private ["PSs11CVarArgType", "data"]
 - !private ["PSs11CVarArgType", "endIndex"]
 - !private ["PSs11CVarArgType", "error"]
 - !private ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "length"]
 - !private ["PSs11CVarArgType", "queue"]
 - !private ["PSs11CVarArgType", "rangeOfString"]
 - !private ["PSs11CVarArgType", "statusCode"]
@@ -112,9 +107,9 @@ depends-member:
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
 - !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "endIndex"]
 - !private ["PSs14CollectionType", "first"]
 - !private ["PSs14CollectionType", "last"]
-- !private ["PSs14CollectionType", "startIndex"]
 - !private ["PSs10Comparable", "ContentTypeValidationFailed"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
@@ -142,7 +137,6 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "last"]
 - !private ["PSs28CustomDebugStringConvertible", "rangeOfString"]
 - !private ["PSs28CustomDebugStringConvertible", "request"]
-- !private ["PSs28CustomDebugStringConvertible", "startIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["PSs28CustomDebugStringConvertible", "substringToIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "validate"]
@@ -161,18 +155,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addOperationWithBlock"]
 - !private ["PSs23CustomStringConvertible", "componentsSeparatedByString"]
-- !private ["PSs23CustomStringConvertible", "data"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - !private ["PSs23CustomStringConvertible", "endIndex"]
 - !private ["PSs23CustomStringConvertible", "error"]
 - !private ["PSs23CustomStringConvertible", "first"]
 - !private ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "last"]
-- !private ["PSs23CustomStringConvertible", "length"]
 - !private ["PSs23CustomStringConvertible", "queue"]
 - !private ["PSs23CustomStringConvertible", "rangeOfString"]
 - !private ["PSs23CustomStringConvertible", "request"]
-- !private ["PSs23CustomStringConvertible", "startIndex"]
 - !private ["PSs23CustomStringConvertible", "statusCode"]
 - !private ["PSs23CustomStringConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["PSs23CustomStringConvertible", "substringToIndex"]
@@ -191,20 +182,18 @@ depends-member:
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addOperationWithBlock"]
 - !private ["PSs9Equatable", "componentsSeparatedByString"]
-- !private ["PSs9Equatable", "data"]
 - !private ["PSs9Equatable", "endIndex"]
 - !private ["PSs9Equatable", "error"]
 - !private ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "length"]
 - !private ["PSs9Equatable", "queue"]
 - !private ["PSs9Equatable", "rangeOfString"]
-- !private ["PSs9Equatable", "startIndex"]
 - !private ["PSs9Equatable", "statusCode"]
 - !private ["PSs9Equatable", "stringByTrimmingCharactersInSet"]
 - !private ["PSs9Equatable", "substringToIndex"]
 - !private ["PSs9Equatable", "valueForHTTPHeaderField"]
 - !private ["PSs9Equatable", "whitespaceAndNewlineCharacterSet"]
 - !private ["V9Alamofire5Error", "errorWithCode"]
+- !private ["PSs9ErrorType", "deinit"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "endIndex"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -227,11 +216,9 @@ depends-member:
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addOperationWithBlock"]
 - !private ["PSs8Hashable", "componentsSeparatedByString"]
-- !private ["PSs8Hashable", "data"]
 - !private ["PSs8Hashable", "endIndex"]
 - !private ["PSs8Hashable", "error"]
 - !private ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "length"]
 - !private ["PSs8Hashable", "queue"]
 - !private ["PSs8Hashable", "rangeOfString"]
 - !private ["PSs8Hashable", "statusCode"]
@@ -244,9 +231,9 @@ depends-member:
 - !private ["PSs9Indexable", "Index"]
 - !private ["PSs9Indexable", "SubSequence"]
 - !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "endIndex"]
 - !private ["PSs9Indexable", "first"]
 - !private ["PSs9Indexable", "last"]
-- !private ["PSs9Indexable", "startIndex"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "ContentTypeValidationFailed"]
 - !private ["Si", "Distance"]
@@ -307,7 +294,6 @@ depends-member:
 - !private ["PSo8NSCoding", "componentsSeparatedByString"]
 - !private ["PSo8NSCoding", "endIndex"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "length"]
 - !private ["PSo8NSCoding", "rangeOfString"]
 - !private ["PSo8NSCoding", "statusCode"]
 - !private ["PSo8NSCoding", "stringByTrimmingCharactersInSet"]
@@ -318,20 +304,17 @@ depends-member:
 - !private ["PSo9NSCopying", "componentsSeparatedByString"]
 - !private ["PSo9NSCopying", "endIndex"]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "length"]
 - !private ["PSo9NSCopying", "rangeOfString"]
 - !private ["PSo9NSCopying", "statusCode"]
 - !private ["PSo9NSCopying", "stringByTrimmingCharactersInSet"]
 - !private ["PSo9NSCopying", "substringToIndex"]
 - !private ["PSo9NSCopying", "valueForHTTPHeaderField"]
 - !private ["PSo9NSCopying", "whitespaceAndNewlineCharacterSet"]
-- !private ["CSo6NSData", "length"]
 - !private ["CSo17NSHTTPURLResponse", "MIMEType"]
 - !private ["CSo17NSHTTPURLResponse", "statusCode"]
 - !private ["PSo16NSMutableCopying", "componentsSeparatedByString"]
 - !private ["PSo16NSMutableCopying", "endIndex"]
 - !private ["PSo16NSMutableCopying", "init"]
-- !private ["PSo16NSMutableCopying", "length"]
 - !private ["PSo16NSMutableCopying", "rangeOfString"]
 - !private ["PSo16NSMutableCopying", "stringByTrimmingCharactersInSet"]
 - !private ["PSo16NSMutableCopying", "substringToIndex"]
@@ -340,12 +323,10 @@ depends-member:
 - !private ["CSo8NSObject", "MIMEType"]
 - !private ["CSo8NSObject", "addOperationWithBlock"]
 - !private ["CSo8NSObject", "componentsSeparatedByString"]
-- !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "endIndex"]
 - !private ["CSo8NSObject", "error"]
 - !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "length"]
 - !private ["CSo8NSObject", "queue"]
 - !private ["CSo8NSObject", "rangeOfString"]
 - !private ["CSo8NSObject", "statusCode"]
@@ -356,11 +337,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "MIMEType"]
 - !private ["PSo16NSObjectProtocol", "addOperationWithBlock"]
 - !private ["PSo16NSObjectProtocol", "componentsSeparatedByString"]
-- !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "endIndex"]
 - !private ["PSo16NSObjectProtocol", "error"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "length"]
 - !private ["PSo16NSObjectProtocol", "queue"]
 - !private ["PSo16NSObjectProtocol", "rangeOfString"]
 - !private ["PSo16NSObjectProtocol", "statusCode"]
@@ -373,7 +352,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "componentsSeparatedByString"]
 - !private ["PSo14NSSecureCoding", "endIndex"]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "length"]
 - !private ["PSo14NSSecureCoding", "rangeOfString"]
 - !private ["PSo14NSSecureCoding", "statusCode"]
 - !private ["PSo14NSSecureCoding", "stringByTrimmingCharactersInSet"]
@@ -406,7 +384,7 @@ depends-member:
 - !private ["VSs5Range", "Generator"]
 - !private ["VSs5Range", "Index"]
 - !private ["VSs5Range", "deinit"]
-- !private ["VSs5Range", "startIndex"]
+- !private ["VSs5Range", "endIndex"]
 - !private ["VSs14RangeGenerator", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
@@ -418,10 +396,10 @@ depends-member:
 - !private ["PSs16RawRepresentable", "StatusCodeValidationFailed"]
 - !private ["C9Alamofire7Request", "Bool"]
 - !private ["C9Alamofire7Request", "Error"]
+- ["C9Alamofire7Request", "ErrorType"]
 - !private ["C9Alamofire7Request", "Int"]
 - !private ["C9Alamofire7Request", "MIMEType"]
 - !private ["C9Alamofire7Request", "NSCharacterSet"]
-- ["C9Alamofire7Request", "NSError"]
 - ["C9Alamofire7Request", "NSHTTPURLResponse"]
 - ["C9Alamofire7Request", "NSURLRequest"]
 - !private ["C9Alamofire7Request", "Range"]
@@ -439,9 +417,9 @@ depends-member:
 - !private ["PSs12SequenceType", "SubSequence"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "contains"]
+- !private ["PSs12SequenceType", "endIndex"]
 - !private ["PSs12SequenceType", "first"]
 - !private ["PSs12SequenceType", "last"]
-- !private ["PSs12SequenceType", "startIndex"]
 - !private ["PSs17SignedIntegerType", "ContentTypeValidationFailed"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
@@ -482,7 +460,6 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "rangeOfString"]
 - !private ["PSs24StringLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["PSs24StringLiteralConvertible", "substringToIndex"]
-- !private ["CC9Alamofire7Request12TaskDelegate", "data"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "error"]
 - !private ["CC9Alamofire7Request12TaskDelegate", "queue"]
 - !private ["Su", "deinit"]
@@ -505,8 +482,8 @@ depends-member:
 - !private ["PSs31UnicodeScalarLiteralConvertible", "rangeOfString"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "substringToIndex"]
+- ["OC9Alamofire7Request16ValidationResult", "ErrorType"]
 - ["OC9Alamofire7Request16ValidationResult", "Failure"]
-- ["OC9Alamofire7Request16ValidationResult", "NSError"]
 - ["OC9Alamofire7Request16ValidationResult", "Success"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
@@ -612,7 +589,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "last"]
 - !private ["PSs12_Reflectable", "rangeOfString"]
-- !private ["PSs12_Reflectable", "startIndex"]
 - !private ["PSs12_Reflectable", "stringByTrimmingCharactersInSet"]
 - !private ["PSs12_Reflectable", "substringToIndex"]
 - !private ["PSs18_SignedIntegerType", "ContentTypeValidationFailed"]
@@ -645,6 +621,7 @@ depends-nominal:
 - !private "Sd"
 - !private "PSs9Equatable"
 - !private "V9Alamofire5Error"
+- !private "PSs9ErrorType"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
 - !private "PSs16ForwardIndexType"
@@ -668,7 +645,6 @@ depends-nominal:
 - !private "CSo14NSCharacterSet"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "CSo6NSData"
 - !private "CSo17NSHTTPURLResponse"
 - !private "PSo16NSMutableCopying"
 - !private "CSo8NSObject"
@@ -736,4 +712,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "5b4114ca54fbb80cf12094b4b847d74f"
+interface-hash: "9eacaf756739cd519461e2bcda5dc591"
