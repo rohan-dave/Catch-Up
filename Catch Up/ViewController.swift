@@ -14,9 +14,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
-    override func
         
-    viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
